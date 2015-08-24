@@ -78,7 +78,8 @@ public class FirstFragment extends Fragment {
                 secFragment = new SecondFragment();
                FragmentManager fm = getActivity().getFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.setCustomAnimations(R.anim.fragment_slide_right_in,R.anim.fragment_slide_right_out);
+               // ft.setCustomAnimations(R.anim.fragment_slide_right_in,R.anim.fragment_slide_right_out);
+                ft.setCustomAnimations(R.anim.fragment_slide_right_in,R.anim.fragment_slide_right_out,R.anim.fragment_slide_right_in,R.anim.fragment_slide_right_out);
                 ft.addToBackStack(null);
                 ft.replace(R.id._container, secFragment);
                 ft.commit();

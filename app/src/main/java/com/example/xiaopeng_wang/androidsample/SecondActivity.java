@@ -32,7 +32,7 @@ public class SecondActivity extends ActionBarActivity
         if(fm.getBackStackEntryCount() == 0){
             super.onBackPressed();
         }else{
-            fm.popBackStack();
+            fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         }
     }
 
